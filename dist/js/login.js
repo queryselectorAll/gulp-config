@@ -1,0 +1,1 @@
+$("#login_form").on("submit",function(){var o=$(this).serialize();$("#custName").val(),$("#password").val();return $.ajax({url:baseUrl+"lcyj-common-wap/app/appLogin",type:"post",data:o,success:function(o){if(console.log(o),"success"===o.status){mui.toast(o.msg);mui.openWindow({url:"./carinfo.html",id:"carinfo",show:{aniShow:"pop-in"},waiting:{autoShow:!1}})}}}),!1});
