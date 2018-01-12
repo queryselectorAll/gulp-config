@@ -1,69 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>登录</title>
-	<link rel="stylesheet" href="../style/base.css">
-	<link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
-	<link rel="stylesheet" href="../style/login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+    <title>欢迎登录</title>
+    <link rel="stylesheet" href="../style/base.css">
+    <link rel="stylesheet" href="../style/login.css">
+    <link rel="stylesheet" href="../lib/font-awesome-4.7.0/css/font-awesome.css">
 </head>
 <body>
-	<div class="layout">
-		<div class="logo">
-			<img src="../images/logo.png" alt="">
-		</div>
-		<h4>开驶出行运营管理系统</h4>
-		<form class="login-form">
-			<div class="form-item">
-				<label for="username">
-					<i class="fa fa-user"></i>
-				</label>
-				<input type="text" class="username" id="username" placeholder="请输入账号">
-			</div>
-			<div class="form-item">
-				<label for="password">
-					<i class="fa fa-key"></i>
-				</label>
-				<input type="password" class="password" id="password" placeholder="请输入密码">
-			</div>
-			<input type="submit" value="登 录" class="submit-btn">
-		</form>
-	</div>
+    <div class="login-layout">
+        <div class="w login-wrap">
+            <div class="login-container">
+                <p class="tips-wrap">京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
+                <div class="login-tab clearfix">
+                    <a href="javascript:void(0);" class="scan-code-login">扫码登录</a>
+                    <a href="javascript:void(0);" class="account-login">账户登录</a>
+                </div>
+                <div class="login-type">
+                    <form class="login-form">
+                        <div class="msg-wrap">
+                            <div class="msg-error">
+                                <i class="fa fa-warning"></i>
+                                <span class="msg-content"></span>
+                            </div>
+                        </div>
+                        <div class="form-item">
+                            <label>
+                                <i class="fa fa-user"></i>
+                            </label>
+                            <input type="text" class="input-item" id="username" name="username" placeholder="邮箱/用户名/已验证手机">
+                        </div>
+                        <div class="form-item">
+                            <label>
+                                <i class="fa fa-key"></i>
+                            </label>
+                            <input type="password" class="input-item" id="password" name="password" placeholder="密码">
+                        </div>
+                        <div class="safe">
+                            <a href="javascript:void(0);" class="forget-password">
+                                忘记密码
+                            </a>
+                        </div>
+                        <div class="login-btn-wrap">
+                            <button type="submit" class="login-btn">登 录</button>
+                        </div>
+                        <div class="third-party" style="margin-top: 20px;">
+                            <i class="fa fa-qq" style="color: #10A8FF;"></i>
+                            <i class="fa fa-weixin" style="color: #00CC00"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<script src="../lib/jquery/jquery-3.2.1.js"></script>
+    <script src="../js/login.js"></script>
 </body>
-<script>
-	/*
-		scrollTop 元素内部内容被卷曲的部分
-		scrollHeight 元素内部实际高度
-	 */
-	// window.onresize = function(){
-	// 	document.body.scrollTop = document.body.scrollHeight;
-	// };
-
-	// $('#username').focus(function(){
-	// 	$('.login-form').css({'position': 'static'});
-	// }).blur(function(){
-	// 	$('.login-form').css({'position': 'absolute'});
-	// });
-	// $('#password').focus(function(){
-	// 	$('.login-form').css({'position': 'static'});
-	// }).blur(function(){
-	// 	$('.login-form').css({'position': 'absolute'});
-	// });
-
-	/*
-		设置最外层容器为屏幕宽高
-		clientHeight可见区域高
-	 */
-	$('body').height($('body')[0].clientHeight);
-
-	// var HEIGHT = $('body').height();
- //    $(window).resize(function() {
- //        $('.layout').height(HEIGHT);
- //    });
- //    $('.layout').height(HEIGHT);
-
-</script>
 </html>

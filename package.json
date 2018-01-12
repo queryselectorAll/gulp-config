@@ -1,26 +1,37 @@
 {
-  "name": "oprate-webapp",
+  "name": "nativejs-validate-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "原生js注册，登录验证模板",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/queryselectorAll/nativejs-validate-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/queryselectorAll/nativejs-validate-template/issues"
+  },
+  "homepage": "https://github.com/queryselectorAll/nativejs-validate-template#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-livereload": "^3.8.1",
     "gulp-minify-css": "^1.2.4",
     "gulp-rename": "^1.2.2",
-    "gulp-ruby-sass": "^3.0.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "tiny-lr": "^1.0.5"
+    "gulp-size": "^3.0.0",
+    "gulp-uglify": "^3.0.0"
   }
 }
